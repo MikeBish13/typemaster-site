@@ -1,0 +1,32 @@
+.feature-card {
+  text-align: center;
+  margin-bottom: 4rem;
+
+  @include mq(tablet) {
+    text-align: left;
+    margin-bottom: 4.5rem;
+  }
+
+  @include mq(desktop) {
+      margin-bottom: 0;
+  }
+
+  &-icon {
+    width: 65px;
+    height: 65px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 16px;
+    background: $clr-orange;
+    margin: 0 auto;
+
+    @include mq(tablet) {
+        margin: 0;
+    }
+  }
+
+  h3 {
+    margin: 4rem 0 1.5rem;
+  }
+}

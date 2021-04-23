@@ -1,0 +1,44 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@500;700;900&display=swap");
+
+body {
+  font-family: "Barlow", sans-serif;
+  color: $clr-dark-gray;
+}
+
+h1,
+h2,
+h3 {
+  color: $clr-navy;
+}
+
+h1 {
+  font-size: 3rem;
+  font-weight: $fw-bold;
+  line-height: 1;
+  text-transform: uppercase;
+  @include mq(desktop) {
+    font-size: 3.5rem;
+  }
+}
+h2 {
+  font-size: 2rem;
+  font-weight: $fw-bold;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+h3 {
+  font-size: 1.5rem;
+  font-weight: $fw-bold;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+p {
+  font-size: 1rem;
+  line-height: 1.625;
+  font-weight: $fw-med;
+}
+
+.para-bold {
+  font-weight: $fw-semi-bold;
+  text-transform: uppercase;
+}

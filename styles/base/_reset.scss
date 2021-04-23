@@ -1,0 +1,32 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden;
+}
+
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container-grid {
+    display: grid;
+    grid-template-columns: 6.5% repeat(12, 1fr) 6.5%;
+  @include mq(desktop) {
+    grid-template-columns: 11% repeat(12, 1fr) 11%;
+  }
+}
